@@ -1,103 +1,70 @@
 ---
 layout: default
-title: Giuseppe Testa - Data Scientist
+title: Giuseppe Testa
 ---
 
-<div class="container">
-  <h1>Giuseppe Testa</h1>
-  <h2>Senior Data Scientist</h2>
+## Data Scientist
 
-  <div class="profile-intro">
-    Experienced Data Scientist with expertise in machine learning, predictive modeling, and algorithm development. Currently working at TeamSystem, with prior experience at Ferragamo and Saipem.
-  </div>
-
-  <h3>Contact</h3>
-  <div class="contact-info">
-    <a href="mailto:giuseppe1.testa@gmail.com">giuseppe1.testa@gmail.com</a>
-    <a href="https://www.linkedin.com/in/giuseppe1-testa">LinkedIn</a>
-    <a href="https://github.com/giuseppe-testa">GitHub</a>
-  </div>
-
-  <h3>Professional Experience</h3>
-
-  <div class="experience-item">
-    <div class="experience-title">Senior Data Scientist</div>
-    <div class="experience-company">TeamSystem</div>
-    <div class="experience-period">November 2023 - Present</div>
-    <div class="experience-location">Campobasso, Molise, Italia</div>
-  </div>
-
-  <div class="experience-item">
-    <div class="experience-title">Data Scientist</div>
-    <div class="experience-company">FERRAGAMO</div>
-    <div class="experience-period">January 2023 - October 2023</div>
-    <div class="experience-location">Florence, Tuscany, Italy</div>
-  </div>
-
-  <div class="experience-item">
-    <div class="experience-title">Data Scientist</div>
-    <div class="experience-company">Saipem</div>
-    <div class="experience-period">January 2021 - December 2022</div>
-    <div class="experience-location">Venezia, Veneto, Italia</div>
-  </div>
-
-  <div class="experience-item">
-    <div class="experience-title">Data Scientist</div>
-    <div class="experience-company">Saipem</div>
-    <div class="experience-period">March 2019 - December 2020</div>
-    <div class="experience-location">Milano, Lombardia, Italia</div>
-  </div>
-
-  <div class="experience-item">
-    <div class="experience-title">Machine Learning Intern</div>
-    <div class="experience-company">Saipem</div>
-    <div class="experience-period">March 2018 - February 2019</div>
-    <div class="experience-location">Milano, Lombardia, Italia</div>
-  </div>
-
-  <div class="experience-item">
-    <div class="experience-title">Mathematics and Statistics Tutor</div>
-    <div class="experience-company">Skuola Network srl</div>
-    <div class="experience-period">September 2014 - June 2018</div>
-    <div class="experience-location">Milan Area, Italy</div>
-  </div>
-
-  <h3>Education</h3>
-  <ul>
-    <li><strong>Master's degree, Computer Science and Engineering</strong><br>Politecnico di Milano</li>
-    <li><strong>Bachelor's degree, Mathematical Engineering</strong><br>Politecnico di Milano</li>
-    <li><strong>Study Experience</strong><br>Pontificia Universidad Católica de Valparaíso</li>
-  </ul>
-
-  <h3>Key Skills</h3>
-  <div class="skills-container">
-    <span class="skill-tag">Demand Forecasting</span>
-    <span class="skill-tag">Sound Engineering</span>
-    <span class="skill-tag">Algorithm Development</span>
-    <span class="skill-tag">Machine Learning</span>
-    <span class="skill-tag">Natural Language Processing</span>
-    <span class="skill-tag">Computer Vision</span>
-  </div>
-
-  <h3>Languages</h3>
-  <ul>
-    <li>Italian (Native)</li>
-    <li>English (Professional)</li>
-    <li>Spanish (Elementary)</li>
-  </ul>
-
-  <h3>Certifications</h3>
-  <ul>
-    <li>Sequences, Time Series and Prediction</li>
-    <li>BOSIET</li>
-    <li>Natural Language Processing in TensorFlow</li>
-    <li>Computer Vision Nanodegree</li>
-    <li>Structuring Machine Learning Projects</li>
-  </ul>
+<div class="profile-intro">
+   Experienced Data Scientist with expertise in machine learning, predictive modeling, and algorithm development. Currently working at TeamSystem, with prior experience at Ferragamo and Saipem.
 </div>
 
-<footer>
-  <div class="container">
-    <p>&copy; 2025 Giuseppe Testa. All rights reserved.</p>
-  </div>
-</footer>
+### Contact
+- **Email:** giuseppe1.testa@gmail.com
+- **LinkedIn:** [linkedin.com/in/giuseppe1-testa](https://www.linkedin.com/in/giuseppe1-testa)
+- **GitHub:** [github.com/giuseppe-testa](https://github.com/giuseppe-testa)
+
+### Professional Experience
+
+#### TeamSystem
+**Senior Data Scientist** | November 2023 - Present  
+Campobasso, Molise, Italia
+
+#### FERRAGAMO
+**Data Scientist** | January 2023 - October 2023  
+Florence, Tuscany, Italy
+
+#### Saipem
+**Data Scientist** | January 2021 - December 2022  
+Venezia, Veneto, Italia
+
+**Data Scientist** | March 2019 - December 2020  
+Milano, Lombardia, Italia
+
+**Machine Learning Intern** | March 2018 - February 2019  
+Milano, Lombardia, Italia
+
+#### Skuola Network srl
+**Mathematics and Statistics Tutor** | September 2014 - June 2018  
+Milan Area, Italy
+
+### Education
+
+- **Master's degree, Computer Science and Engineering**  
+  Politecnico di Milano
+
+- **Bachelor's degree, Mathematical Engineering**  
+  Politecnico di Milano
+
+- **Study Experience**  
+  Pontificia Universidad Católica de Valparaíso
+
+### Key Skills
+- Demand Forecasting
+- Sound Engineering
+- Algorithm Development
+- Machine Learning
+- Natural Language Processing
+- Computer Vision
+
+### Languages
+- Italian (Native)
+- English (Professional)
+- Spanish (Elementary)
+
+### Certifications
+- Sequences, Time Series and Prediction
+- BOSIET
+- Natural Language Processing in TensorFlow
+- Computer Vision Nanodegree
+- Structuring Machine Learning Projects
