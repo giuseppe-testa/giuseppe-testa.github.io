@@ -5,7 +5,7 @@ title: Giuseppe Testa - Data Scientist
 
 <div class="container">
   <h1>Giuseppe Testa</h1>
-  <h2>Data Scientist</h2>
+  <h2>Senior Data Scientist</h2>
 
   <div class="profile-intro">
     Experienced Data Scientist with expertise in machine learning, predictive modeling, and algorithm development. Currently working at TeamSystem, with prior experience at Ferragamo and Saipem.
