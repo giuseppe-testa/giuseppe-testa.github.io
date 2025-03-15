@@ -2,7 +2,7 @@
 title: Giuseppe Testa | Data Scientist
 email: giuseppe1.testa@gmail.com
 description: >- 
-  Data Scientist with expertise in machine learning, predictive modeling, 
+  Senior Data Scientist with expertise in machine learning, predictive modeling, 
   and algorithm development. Experienced in demand forecasting, NLP, and computer vision.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
@@ -15,8 +15,6 @@ theme: jekyll-theme-cayman
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
-sass:
-  sass_dir: assets/css
 
 # Exclude from processing
 exclude:
@@ -28,7 +26,7 @@ exclude:
   - README.md
 
 # Custom settings
-show_downloads: true
+show_downloads: false
 google_analytics: # Add your Google Analytics ID here if needed
 
 # Social links
