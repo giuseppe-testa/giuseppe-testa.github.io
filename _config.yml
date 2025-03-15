@@ -1,1 +1,41 @@
-theme: jekyll-theme-merlot
+# Site settings
+title: Giuseppe Testa | Data Scientist
+email: giuseppe1.testa@gmail.com
+description: >- 
+  Data Scientist with expertise in machine learning, predictive modeling, 
+  and algorithm development. Experienced in demand forecasting, NLP, and computer vision.
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
+linkedin_username: giuseppe1-testa
+github_username:  giuseppe-testa
+
+# Build settings
+markdown: kramdown
+theme: minima
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+# Exclude from processing
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
+  - .gitignore
+  - README.md
+
+# Custom settings
+show_downloads: true
+google_analytics: # Add your Google Analytics ID here if needed
+
+# Social links
+social_links:
+  linkedin: giuseppe1-testa
+  github: giuseppe-testa
+
+# Collections (if you want to add portfolio projects later)
+# collections:
+#   projects:
+#     output: true
+#     permalink: /projects/:path/
