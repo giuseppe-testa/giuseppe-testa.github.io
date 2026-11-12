@@ -1,0 +1,47 @@
+project:
+  type: website
+  output-dir: _site
+  # Render only Quarto content (the old Jekyll files are ignored until deleted)
+  render:
+    - index.md
+    - cv.qmd
+    - projects/**
+    - blog/**
+
+website:
+  title: "Giuseppe Testa"
+  description: "Senior Data Scientist: machine learning, forecasting and applied AI."
+  site-url: "https://giuseppe-testa.github.io"
+  repo-url: "https://github.com/giuseppe-testa/giuseppe-testa.github.io"
+  navbar:
+    left:
+      - href: index.md
+        text: Home
+      - href: projects/index.qmd
+        text: Projects
+      - href: blog/index.qmd
+        text: Blog
+      - href: cv.qmd
+        text: CV
+    right:
+      - icon: linkedin
+        href: https://www.linkedin.com/in/giuseppe1-testa
+        aria-label: LinkedIn
+      - icon: github
+        href: https://github.com/giuseppe-testa
+        aria-label: GitHub
+  page-footer:
+    left: "© 2026 Giuseppe Testa"
+    right: "Built with [Quarto](https://quarto.org)"
+
+format:
+  html:
+    theme:
+      light: [cosmo, styles.scss]
+    toc: true
+    code-copy: true
+    code-overflow: wrap
+
+execute:
+  # Notebooks keep the outputs you saved locally; .qmd results are cached in _freeze/
+  freeze: auto

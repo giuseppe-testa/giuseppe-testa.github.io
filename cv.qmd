@@ -1,0 +1,43 @@
+---
+title: "Curriculum Vitae"
+toc: true
+---
+
+## Experience
+
+### TeamSystem
+**Senior Data Scientist** · Nov 2023 – present · Campobasso, Italy
+
+### Ferragamo
+**Data Scientist** · Jan 2023 – Oct 2023 · Florence, Italy
+
+### Saipem
+**Data Scientist** · Jan 2021 – Dec 2022 · Venice, Italy  
+**Data Scientist** · Mar 2019 – Dec 2020 · Milan, Italy  
+**Machine Learning Intern** · Mar 2018 – Feb 2019 · Milan, Italy
+
+### Skuola Network
+**Mathematics and Statistics Tutor** · Sep 2014 – Jun 2018 · Milan, Italy
+
+## Education
+
+- **MSc, Computer Science and Engineering**, Politecnico di Milano
+- **BSc, Mathematical Engineering**, Politecnico di Milano
+- **Exchange semester**, Pontificia Universidad Católica de Valparaíso
+
+## Skills
+
+Demand forecasting · Machine learning · Natural language processing ·
+Computer vision · Algorithm development · Sound engineering
+
+## Languages
+
+Italian (native) · English (professional) · Spanish (elementary)
+
+## Certifications
+
+- Sequences, Time Series and Prediction
+- Natural Language Processing in TensorFlow
+- Structuring Machine Learning Projects
+- Computer Vision Nanodegree
+- BOSIET

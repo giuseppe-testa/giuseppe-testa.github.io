@@ -1,0 +1,24 @@
+---
+title: "Demand forecasting (placeholder)"
+description: "Template for a case study. Replace with a real project."
+date: 2026-11-10
+categories: [forecasting, time series]
+---
+
+*Placeholder case study: this is the structure we'll use for every project.*
+
+## The problem
+
+What the business needed, and why it mattered.
+
+## The approach
+
+Data, methods, and the key decisions you made.
+
+## The result
+
+The measurable outcome: accuracy, savings, adoption.
+
+## What I learned
+
+One or two takeaways.

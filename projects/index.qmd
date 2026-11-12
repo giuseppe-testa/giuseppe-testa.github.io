@@ -1,0 +1,11 @@
+---
+title: "Projects"
+description: "Case studies: the problem, the approach, and the business result."
+listing:
+  contents: "*/index.qmd"
+  sort: "date desc"
+  type: grid
+  categories: true
+  fields: [title, description, categories]
+toc: false
+---

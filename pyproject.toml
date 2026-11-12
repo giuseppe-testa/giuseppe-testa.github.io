@@ -1,0 +1,20 @@
+[project]
+name = "giuseppe-testa-site"
+version = "0.1.0"
+description = "Python environment for writing the notebooks published on giuseppe-testa.github.io"
+requires-python = ">=3.12"
+dependencies = [
+    "ipykernel",
+    "jupyterlab",
+    "matplotlib",
+    "pandas",
+]
+
+[tool.uv]
+# This repo is a website, not a Python package: uv only manages the environment
+package = false
+
+[dependency-groups]
+dev = [
+    "quarto-cli>=1.11.9",
+]

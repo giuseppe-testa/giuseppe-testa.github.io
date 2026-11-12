@@ -1,70 +1,36 @@
 ---
-layout: default
-title: Giuseppe Testa
+title: "Giuseppe Testa"
+subtitle: "Senior Data Scientist"
+about:
+  template: trestles
+  links:
+    - icon: linkedin
+      text: LinkedIn
+      href: https://www.linkedin.com/in/giuseppe1-testa
+    - icon: github
+      text: GitHub
+      href: https://github.com/giuseppe-testa
+    - icon: file-earmark-person
+      text: CV
+      href: cv.qmd
+listing:
+  id: latest-posts
+  contents: blog/posts
+  sort: "date desc"
+  type: default
+  max-items: 3
+  fields: [date, title, description]
+toc: false
 ---
 
-## Data Scientist
+I'm a data scientist with almost ten years of experience turning data into
+decisions: demand forecasting, NLP and computer vision, from energy (Saipem)
+to luxury retail (Ferragamo) to software (TeamSystem).
 
-<div class="profile-intro">
-   Experienced Data Scientist with expertise in machine learning, predictive modeling, and algorithm development. Currently working at TeamSystem, with prior experience at Ferragamo and Saipem.
-</div>
+*This is the first skeleton of the site. The positioning statement above is a
+placeholder we'll rewrite together.*
 
-### Contact
-- **Email:** giuseppe1.testa@gmail.com
-- **LinkedIn:** [linkedin.com/in/giuseppe1-testa](https://www.linkedin.com/in/giuseppe1-testa)
-- **GitHub:** [github.com/giuseppe-testa](https://github.com/giuseppe-testa)
+## Latest writing
 
-### Professional Experience
-
-#### TeamSystem
-**Senior Data Scientist** | November 2023 - Present  
-Campobasso, Molise, Italia
-
-#### FERRAGAMO
-**Data Scientist** | January 2023 - October 2023  
-Florence, Tuscany, Italy
-
-#### Saipem
-**Data Scientist** | January 2021 - December 2022  
-Venezia, Veneto, Italia
-
-**Data Scientist** | March 2019 - December 2020  
-Milano, Lombardia, Italia
-
-**Machine Learning Intern** | March 2018 - February 2019  
-Milano, Lombardia, Italia
-
-#### Skuola Network srl
-**Mathematics and Statistics Tutor** | September 2014 - June 2018  
-Milan Area, Italy
-
-### Education
-
-- **Master's degree, Computer Science and Engineering**  
-  Politecnico di Milano
-
-- **Bachelor's degree, Mathematical Engineering**  
-  Politecnico di Milano
-
-- **Study Experience**  
-  Pontificia Universidad Católica de Valparaíso
-
-### Key Skills
-- Demand Forecasting
-- Sound Engineering
-- Algorithm Development
-- Machine Learning
-- Natural Language Processing
-- Computer Vision
-
-### Languages
-- Italian (Native)
-- English (Professional)
-- Spanish (Elementary)
-
-### Certifications
-- Sequences, Time Series and Prediction
-- BOSIET
-- Natural Language Processing in TensorFlow
-- Computer Vision Nanodegree
-- Structuring Machine Learning Projects
+::: {#latest-posts}
+:::
