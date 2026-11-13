@@ -1,0 +1,21 @@
+# Dependabot: monthly update checks for this repo.
+# One grouped PR per ecosystem, so updates arrive as at most 2 PRs a month.
+version: 2
+updates:
+  # Python environment (pyproject.toml + uv.lock): used locally to write notebooks
+  - package-ecosystem: "uv"
+    directory: "/"
+    schedule:
+      interval: "monthly"
+    groups:
+      python-packages:
+        patterns: ["*"]
+
+  # Actions used in .github/workflows/publish.yml
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "monthly"
+    groups:
+      github-actions:
+        patterns: ["*"]
