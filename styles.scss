@@ -90,15 +90,22 @@ h1, h2, h3, h4, h5, h6, .navbar-title, .listing-title, .card-title { font-weight
 .cv-company-head .anchorjs-link { display: none; }
 .cv-company-name { margin: 0 !important; font-size: 1.35rem; color: $ink; border: 0 !important; }
 .cv-sector, .cv-row-label { font-family: $headings-font-family; font-size: .85rem; color: $muted; }
-.cv-role { margin-top: .55rem; }
+.cv-company-dates { margin-left: auto; color: $muted; font-size: .95rem; }
+.cv-role { margin-top: .7rem; }
 .cv-role-line { display: flex; justify-content: space-between; gap: 1rem; flex-wrap: wrap; }
 .cv-role-title { font-weight: 600; }
 .cv-role-meta, .cv-row-meta { color: $muted; font-size: .95rem; }
 .cv-summary { margin: .3rem 0 0; color: #3a3d31; }
-.cv-highlights { margin: .4rem 0 0; padding-left: 1.1rem; color: #3a3d31; }
+.cv-highlights { margin: .4rem 0 0; padding-left: 1.1rem; color: #3a3d31; font-size: .97rem; }
+.cv-highlights li { margin-bottom: .3rem; }
+.cv-highlights strong { color: $ink; font-weight: 600; }
 .cv-tags { display: flex; flex-wrap: wrap; gap: .4rem; margin-top: .45rem; }
 .cv-tag { font-family: $headings-font-family; font-size: .85rem; color: $green; border: 1px solid $line; background: #f8f3e6; padding: .1rem .5rem; }
 .cv-row { display: flex; justify-content: space-between; gap: 1rem; flex-wrap: wrap; padding: .6rem 0; border-bottom: 1px solid $line; }
 .cv-row-main { font-weight: 500; }
-.cv-row-tags { display: block; }
+.cv-row-tags, .cv-row-block { display: block; }
+.cv-row-line { display: flex; justify-content: space-between; gap: 1rem; flex-wrap: wrap; }
+.cv-row-sub { color: $muted; }
+.cv-row-note { margin-top: .2rem; font-size: .95rem; color: #3a3d31; }
+.cv-row-note strong { font-weight: 600; }
 .cv-row-tags .cv-tags { margin-top: .35rem; }

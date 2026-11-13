@@ -1,10 +1,23 @@
-# Degrees and study periods, most recent first. Dates optional ("YYYY" or "YYYY-MM").
+# Degrees and study periods, most recent first.
+# Fields: degree, institution, location, start/end ("YYYY-MM"), optional thesis, notes.
 
-- degree: MSc, Computer Science and Engineering
+- degree: MSc in Computer Science and Engineering
   institution: Politecnico di Milano
+  location: Italy
+  start: "2015-02"
+  end: "2018-07"
+  thesis: CNN-based identification of landmines in GPR scans
 
-- degree: BSc, Mathematical Engineering
+- degree: BSc in Mathematical Engineering
   institution: Politecnico di Milano
+  location: Italy
+  start: "2009-09"
+  end: "2014-07"
+  thesis: Constitutive modelling of passive myocardium tissue (theoretical research on cardiac tissue mechanics)
 
-- degree: Exchange semester
+- degree: Erasmus+ Exchange Program
   institution: Pontificia Universidad Católica de Valparaíso
+  location: Chile
+  start: "2014-02"
+  end: "2014-07"
+  notes: Technical engineering coursework in Spanish (Fluid Mechanics, Geometry).

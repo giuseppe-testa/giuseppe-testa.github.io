@@ -1,6 +1,7 @@
 <%
 const M = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
 const fmt = d => { if (!d) return "present"; const [y, m] = String(d).split("-"); return m ? `${M[+m - 1]} ${y}` : y; };
+const span = (s, e) => (s || e !== undefined) && s ? `${fmt(s)} – ${fmt(e)}` : "";
 %>
 ```{=html}
 <div class="cv-timeline">
@@ -9,16 +10,21 @@ const fmt = d => { if (!d) return "present"; const [y, m] = String(d).split("-")
 <div class="cv-company-head">
 <h3 class="cv-company-name"><%= item.company %></h3>
 <% if (item.sector) { %><span class="cv-sector"><%= item.sector %></span><% } %>
+<% if (item.start) { %><span class="cv-company-dates"><%= span(item.start, item.end) %></span><% } %>
 </div>
 <% for (const r of (item.roles || [])) { %>
 <div class="cv-role">
 <div class="cv-role-line">
 <span class="cv-role-title"><%= r.title %></span>
-<span class="cv-role-meta"><%= fmt(r.start) %> – <%= fmt(r.end) %><% if (r.location) { %> · <%= r.location %><% } %></span>
+<span class="cv-role-meta"><%= [span(r.start, r.end), r.location].filter(Boolean).join(" · ") %></span>
 </div>
 <% if (r.summary) { %><p class="cv-summary"><%= r.summary %></p><% } %>
 <% if (r.highlights && r.highlights.length) { %>
-<ul class="cv-highlights"><% for (const h of r.highlights) { %><li><%= h %></li><% } %></ul>
+<ul class="cv-highlights">
+<% for (const h of r.highlights) { %>
+<% if (typeof h === "string") { %><li><%= h %></li><% } else { %><li><strong><%= h.label %>:</strong> <%= h.text %></li><% } %>
+<% } %>
+</ul>
 <% } %>
 <% if (r.tags && r.tags.length) { %>
 <div class="cv-tags"><% for (const t of r.tags) { %><span class="cv-tag"><%= t %></span><% } %></div>

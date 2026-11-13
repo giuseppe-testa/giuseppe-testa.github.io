@@ -1,7 +1,16 @@
-# Skills grouped by area. Each group renders as a row of tags.
+# Skills grouped by area: technical first, then delivery and leadership.
 
-- group: Methods
-  items: [Demand forecasting, Machine learning, Natural language processing, Computer vision, Algorithm development]
+- group: Machine learning & AI
+  items: [Demand forecasting, Scenario analysis, Natural language processing, Computer vision, Process automation, "Mathematical optimization (AMPL, Gurobi)"]
 
-- group: Other
-  items: [Sound engineering]
+- group: Data & software
+  items: [Python, SQL, Databricks, Azure IoT, Docker, Git, "C#", "C++"]
+
+- group: Leadership & delivery
+  items: [Cross-functional coordination, Stakeholder management, Roadmap planning, KPI definition & monitoring, Third-party vendor coordination, HQ–field alignment]
+
+- group: Industrial operations
+  items: [Real-time operational monitoring, Quality assurance & compliance, Root-cause analysis, Manufacturing process analysis]
+
+- group: BI & reporting
+  items: [Excel (advanced), Executive reporting, Databricks dashboards, Power BI]

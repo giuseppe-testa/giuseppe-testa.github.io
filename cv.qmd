@@ -20,10 +20,6 @@ listing:
     contents: data/cv/languages.yml
     template: templates/cv-languages.ejs
     sort: false
-  - id: certifications
-    contents: data/cv/certifications.yml
-    template: templates/cv-certifications.ejs
-    sort: false
 ---
 
 ## Experience
@@ -44,9 +40,4 @@ listing:
 ## Languages
 
 ::: {#languages}
-:::
-
-## Certifications
-
-::: {#certifications}
 :::

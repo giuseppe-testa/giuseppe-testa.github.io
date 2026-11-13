@@ -1,43 +1,60 @@
 # Work experience, most recent first.
-# Each company groups one or more roles. Dates: "YYYY-MM"; end: null = present.
-# Optional per role: summary (one sentence), highlights (list of results), tags.
+# Company: company, sector, optional start/end ("YYYY-MM"; end: null = present).
+# Role: title, location, optional start/end (when they differ from the company's),
+#   summary, highlights (strings or {label, text}), tags.
 
 - company: TeamSystem
   sector: Software
+  start: "2023-11"
+  end: null
   roles:
-    - title: Senior Data Scientist
-      start: "2023-11"
-      end: null
-      location: Campobasso, Italy
+    - title: Senior Data Scientist – AI & Automation
+      location: Campobasso / Remote
+      highlights:
+        - label: Technical project leadership
+          text: Led a strategic process automation initiative achieving 50% automation of incoming operational tickets, a 90% reduction in manual dispatching time, and freeing operational capacity for 6–12 Team Leaders per Business Unit.
+        - label: Cross-functional project coordination
+          text: Acted as primary interface between IT, Product Management and Business stakeholders, ensuring alignment of priorities, smooth flow of information and timely execution of the technical and operational roadmap.
+        - label: Data-driven performance monitoring
+          text: Defined operational KPIs and monitoring frameworks to track process efficiency at scale, structuring the reporting and analysis used by Business Units to drive continuous improvement.
+        - label: Strategic roadmap & stakeholder management
+          text: Partnered with Product Managers and Business stakeholders to define a medium- to long-term roadmap, evaluating feasibility and prioritizing initiatives based on operational impact and business value.
 
-- company: Ferragamo
+- company: Salvatore Ferragamo
   sector: Luxury retail
+  start: "2023-01"
+  end: "2023-10"
   roles:
-    - title: Data Scientist
-      start: "2023-01"
-      end: "2023-10"
-      location: Florence, Italy
+    - title: Senior Data Scientist – Pricing & Demand Planning
+      location: Florence
+      highlights:
+        - label: Performance initiative in the apparel industry
+          text: Owned a strategic forecasting and optimization initiative within the luxury apparel business, supporting Sales Managers and operational stakeholders in inventory, pricing and demand-planning decisions for the Outlet channel.
+        - label: Cross-functional & HQ coordination
+          text: Acted as primary interface between business stakeholders, the IT department and external consultancy partners (BCG), aligning priorities and ensuring smooth information flow during the transition from prototype to operational use.
+        - label: KPI-driven decision support
+          text: Designed reporting workflows and SKU-level forecasting models, providing structured analysis and actionable recommendations for global seasonal sales campaigns.
 
 - company: Saipem
   sector: Energy
+  start: "2018-01"
+  end: "2022-10"
   roles:
-    - title: Data Scientist
-      start: "2021-01"
-      end: "2022-12"
-      location: Venice, Italy
-    - title: Data Scientist
-      start: "2019-03"
-      end: "2020-12"
-      location: Milan, Italy
-    - title: Machine Learning Intern
-      start: "2018-03"
-      end: "2019-02"
-      location: Milan, Italy
-
-- company: Skuola Network
-  sector: Education
-  roles:
-    - title: Mathematics and Statistics Tutor
-      start: "2014-09"
-      end: "2018-06"
-      location: Milan, Italy
+    - title: Data Scientist – Offshore & Innovation
+      location: Venice / International
+      highlights:
+        - label: Plant & operations performance monitoring
+          text: Designed and deployed real-time monitoring systems for offshore pipelaying operations, capturing high-frequency operational data and business KPIs to support data-driven decision-making by production and engineering teams.
+        - label: Quality assurance & operational risk mitigation
+          text: Engineered a welding parameter validation system aligned with client-specific quality and safety standards, preventing non-conformities and reducing operational downtime through real-time deviation detection — a continuous improvement initiative directly impacting production efficiency and re-work costs.
+        - label: HQ ↔ field coordination (international)
+          text: Acted as technical liaison between vessel operations in Las Palmas, Dammam and Doha and the Milan / Venice headquarters, ensuring alignment between local execution and corporate standards, and coordinating the flow of operational reporting toward HQ.
+        - label: Global on-field deployment
+          text: Successfully deployed and maintained industrial data systems onboard vessels in extreme operational environments, ensuring 24/7 reliability and continuity of business-critical monitoring.
+    - title: Junior Data Scientist – XSIGHT Innovation Division
+      location: Milan
+      highlights:
+        - label: Process efficiency initiative
+          text: Designed and rolled out an internal tool for the automated interpretation of Piping & Instrumentation Diagrams (P&ID), reducing manual engineering verification time by 95% and supporting the operational adoption of the new process by engineering teams.
+        - label: Industrial asset inspection PoC
+          text: Built a drone-based corrosion detection prototype to explore autonomous inspection capabilities for industrial assets.
