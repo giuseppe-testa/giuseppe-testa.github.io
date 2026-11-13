@@ -1,18 +1,8 @@
 ---
-title: "Giuseppe Testa"
-subtitle: "Senior Data Scientist"
-about:
-  template: trestles
-  links:
-    - icon: linkedin
-      text: LinkedIn
-      href: https://www.linkedin.com/in/giuseppe1-testa
-    - icon: github
-      text: GitHub
-      href: https://github.com/giuseppe-testa
-    - icon: file-earmark-person
-      text: CV
-      href: cv.qmd
+pagetitle: "Giuseppe Testa · Senior Data Scientist"
+page-layout: full
+body-classes: home
+toc: false
 listing:
   id: latest-posts
   contents: blog/posts
@@ -20,17 +10,42 @@ listing:
   type: default
   max-items: 3
   fields: [date, title, description]
-toc: false
 ---
 
-I'm a data scientist with almost ten years of experience turning data into
-decisions: demand forecasting, NLP and computer vision, from energy (Saipem)
-to luxury retail (Ferragamo) to software (TeamSystem).
+::: {.hero .column-screen}
+::: {.hero-inner}
+[~/giuseppe $ senior data scientist]{.hero-kicker}
 
-*This is the first skeleton of the site. The positioning statement above is a
-placeholder we'll rewrite together.*
+[Giuseppe Testa]{.hero-name}
+
+[I turn data into decisions. Ten years of forecasting, NLP and computer vision across energy, luxury retail and software.]{.hero-lead}
+
+::: {.hero-actions}
+[See my projects](projects/index.qmd){.btn .btn-primary .btn-lg}
+[Read the blog](blog/index.qmd){.btn .btn-outline-primary .btn-lg}
+[CV](cv.qmd){.btn .btn-link .btn-lg}
+:::
+:::
+:::
+
+::: {.home-section .column-page}
+::: {.focus-grid}
+::: {.focus-card}
+### Forecasting
+Demand and time-series models that planners actually use.
+:::
+::: {.focus-card}
+### NLP
+From document understanding to search and classification.
+:::
+::: {.focus-card}
+### Computer vision
+Inspection and recognition pipelines, from prototype to production.
+:::
+:::
 
 ## Latest writing
 
 ::: {#latest-posts}
+:::
 :::

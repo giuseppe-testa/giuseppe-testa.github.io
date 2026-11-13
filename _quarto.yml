@@ -39,6 +39,7 @@ format:
     theme:
       light: [cosmo, styles.scss]
     toc: true
+    highlight-style: github
     code-copy: true
     code-overflow: wrap
 

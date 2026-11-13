@@ -1,12 +1,82 @@
 /*-- scss:defaults --*/
-// Forest-green palette carried over from the Jekyll version
-$primary: #2d6a4f;
-$link-color: #2d6a4f;
-$navbar-bg: #1b4332;
-$navbar-fg: #f0f7f4;
-$footer-bg: #f0f7f4;
+// Palette "Carta e inchiostro": cream paper, black ink, forest green
+// Fonts: Share Tech Mono (headings, details), IBM Plex Sans (text), IBM Plex Mono (code)
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;1,400&family=Share+Tech+Mono&display=swap');
+
+$cream: #f3ecda;
+$cream-dark: #e9e0c8;
+$line: #d6cbb0;
+$ink: #15180f;
+$green: #1f6b45;
+$muted: #5d5f52;
+
+$font-family-sans-serif: "IBM Plex Sans", system-ui, -apple-system, sans-serif;
+$font-family-monospace: "IBM Plex Mono", ui-monospace, monospace;
+$headings-font-family: "Share Tech Mono", "IBM Plex Mono", monospace;
+$headings-font-weight: 400;
+$font-size-base: 1.05rem;
+
+$body-bg: $cream;
+$body-color: $ink;
+$text-muted: $muted;
+$primary: $green;
+$link-color: $green;
+$border-color: $line;
+$navbar-bg: $cream;
+$navbar-fg: $ink;
+$navbar-hl: $green;
+$footer-bg: $cream;
+$footer-fg: $muted;
+$code-bg: $cream-dark;
+$code-color: $green;
+$card-bg: #f8f3e6;
+$card-border-color: $line;
+$btn-border-radius: 0;
+$btn-border-radius-lg: 0;
 
 /*-- scss:rules --*/
-.quarto-about-trestles .about-entity .about-link {
-  border-color: $primary;
-}
+.navbar { border-bottom: 1px solid $line; }
+.navbar-brand .navbar-title { font-family: $headings-font-family; font-size: 1.35rem; }
+.navbar .nav-link { font-family: $headings-font-family; }
+
+h1, h2, h3, h4, .title { letter-spacing: .01em; }
+
+/* home hero */
+.hero { padding: 6rem 1rem 3.5rem; border-bottom: 1px solid $line; }
+.hero-inner { max-width: 740px; margin: 0 auto; }
+.hero-kicker { display: block; font-family: $headings-font-family; font-size: 1.05rem; color: $green; }
+.hero-kicker::after { content: ""; display: inline-block; width: .55em; height: 1.05em; margin-left: .2em; vertical-align: -.15em; background: $green; animation: blink 1.1s steps(1) infinite; }
+@keyframes blink { 50% { opacity: 0; } }
+.hero-name { display: block; font-family: $headings-font-family; font-size: clamp(2.8rem, 7vw, 4.8rem); line-height: 1; margin: 1rem 0 1.3rem; color: $ink; }
+.hero-lead { display: block; font-size: 1.25rem; line-height: 1.6; color: #3a3d31; max-width: 640px; }
+.hero-actions { margin-top: 2rem; }
+.hero-actions p { display: flex; gap: .6rem; flex-wrap: wrap; margin: 0; }
+.hero .btn { font-family: $headings-font-family; }
+.hero .btn-primary { color: $cream; }
+
+.home-section { max-width: 740px; margin: 3rem auto 4rem; padding: 0 1rem; position: relative; }
+.focus-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; margin-bottom: 3.5rem; }
+.focus-card { background: #f8f3e6; border: 1px solid $line; padding: 1.4rem; }
+.focus-card h3 { font-size: 1.2rem; margin: 0 0 .5rem; color: $green; }
+.focus-card h3::before { content: "> "; color: $muted; }
+.focus-card p { color: #3a3d31; margin: 0; font-size: .97rem; }
+
+.home main.content, .home #quarto-content { margin-top: 0 !important; padding-top: 0 !important; }
+.home #title-block-header { display: none; }
+@media (max-width: 576px) { .hero { padding-top: 3.5rem; padding-bottom: 3rem; } }
+
+/* code and notebook outputs */
+div.sourceCode, pre.sourceCode { background-color: $cream-dark !important; border: 1px solid $line !important; border-radius: 0; }
+.cell-output pre, .cell-output pre code { color: #3a3d31; background: transparent; }
+:not(pre) > code { background: $cream-dark; color: $green; padding: .1em .35em; }
+
+/* listings */
+.quarto-grid-item.card { border: 1px solid $line; border-radius: 0; transition: border-color .15s, transform .15s; }
+.quarto-grid-item.card:hover { border-color: $green; transform: translateY(-2px); }
+.quarto-grid-item .card-title, .quarto-post .listing-title { font-family: $headings-font-family; }
+.quarto-listing-default .quarto-post { border-bottom-color: $line; }
+.quarto-category { border-color: $line !important; color: $muted !important; }
+
+/* Share Tech Mono has a single weight: never fake bold */
+h1, h2, h3, h4, h5, h6, .navbar-title, .listing-title, .card-title { font-weight: 400 !important; font-synthesis: none; }
+@media (max-width: 576px) { .home-section { padding: 0; } }
