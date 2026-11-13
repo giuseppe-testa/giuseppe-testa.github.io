@@ -1,0 +1,13 @@
+# Films & TV, most recent first.
+# Fields: title, creator (director or showrunner), type ("film" or "series"), year, optional cover, url.
+# cover: path to an image in images/shelf/screen/.
+
+- title: Film title
+  creator: Director name
+  type: film
+  year: 2026
+
+- title: Series title
+  creator: Showrunner name
+  type: series
+  year: 2026

@@ -3,7 +3,7 @@
 Riferimento interno per palette, font e componenti del sito. **Non pubblicato sul sito**: il file sta in `_design/`, che Quarto ignora (cartella con `_` e fuori dalla lista `render` di `_quarto.yml`). È versionato nel repository, quindi è visibile su GitHub.
 
 Implementazione: `styles.scss` (variabili e regole) + `_quarto.yml` (`theme: [cosmo, styles.scss]`, `highlight-style: github`).
-Ultimo aggiornamento: 13/11/2026.
+Ultimo aggiornamento: 13/11/2026 (aggiunti CV, footer e scaffali).
 
 ## Idea
 
@@ -54,6 +54,12 @@ Regole:
 - **Card focus**: titolo verde in Share Tech Mono con prefisso `> ` in `$muted`.
 - **Code block**: sfondo `$cream-dark`, bordo `$line`, sintassi `highlight-style: github`.
 - **Larghezza contenuti in home**: colonna da 740px.
+- **CV**: esperienze come timeline verticale (bordo sinistro `$line`, quadratino verde per azienda), date e sede allineate a destra in `$muted`, risultati con etichetta in grassetto; competenze come etichette in Share Tech Mono verde su card. Dati in `data/cv/*.yml`, aspetto in `templates/cv-*.ejs`.
+- **Scaffali** (Bookshelf, Audioshelf, Films & TV): griglia di copertine (`minmax(150px, 1fr)`, 2 colonne su mobile), proporzione 2:3 per libri e film e 1:1 per podcast e musica, bordo `$line` che diventa verde al passaggio se c'è un link. Senza immagine, la copertina è tipografica: fondo card, filetto verde in alto, titolo e autore in Share Tech Mono. Dati in `data/shelf/*.yml`, un solo template `templates/shelf.ejs`, immagini in `images/shelf/<books|audio|screen>/`.
+- **Footer** (classico minimale, tre parti, bordo superiore `$line`):
+  - sinistra: `© 2026 Giuseppe Testa`, in Plex Sans `$muted`;
+  - centro: "Finally I did it. Thanks, Claudio.", in Share Tech Mono verde;
+  - destra: `last build: YYYY-MM-DD`, in Plex Mono. La data è scritta a ogni render da `scripts/build-date.ts` (pre-render, gira con il Deno di Quarto) in `_variables.yml`, che è in `.gitignore`, e letta con `{{< var build_date >}}`.
 
 ## Da valutare
 

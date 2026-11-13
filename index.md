@@ -23,7 +23,6 @@ listing:
 ::: {.hero-actions}
 [See my projects](projects/index.qmd){.btn .btn-primary .btn-lg}
 [Read the blog](blog/index.qmd){.btn .btn-outline-primary .btn-lg}
-[CV](cv.qmd){.btn .btn-link .btn-lg}
 :::
 :::
 :::

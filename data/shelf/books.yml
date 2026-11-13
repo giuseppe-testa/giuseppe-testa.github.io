@@ -1,0 +1,8 @@
+# Bookshelf, most recent first.
+# Fields: title, creator (author), year, optional cover, url.
+# cover: path to an image in images/shelf/books/ (e.g. images/shelf/books/my-book.jpg).
+#        Without a cover, the site draws a typographic one in the site palette.
+
+- title: Book title
+  creator: Author name
+  year: 2026

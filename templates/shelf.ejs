@@ -1,0 +1,18 @@
+```{=html}
+<div class="shelf-grid">
+<% for (const item of items) { %>
+<% const tag = item.url ? "a" : "div"; %>
+<<%= tag %> class="shelf-item"<% if (item.url) { %> href="<%= item.url %>" target="_blank" rel="noopener"<% } %>>
+<% if (item.cover) { %>
+<img class="shelf-cover" src="<%= item.cover %>" alt="Cover of <%= item.title %>" loading="lazy">
+<% } else { %>
+<div class="shelf-cover shelf-cover-text"><span class="shelf-cover-title"><%= item.title %></span><span class="shelf-cover-creator"><%= item.creator %></span></div>
+<% } %>
+<div class="shelf-meta">
+<span class="shelf-title"><%= item.title %></span>
+<span class="shelf-creator"><%= [item.creator, item.year].filter(Boolean).join(" · ") %></span>
+</div>
+</<%= tag %>>
+<% } %>
+</div>
+```

@@ -1,0 +1,14 @@
+---
+title: "Bookshelf"
+description: "Books I've read and recommend."
+toc: false
+# Data: data/shelf/books.yml · layout: templates/shelf.ejs
+listing:
+  id: books
+  contents: data/shelf/books.yml
+  template: templates/shelf.ejs
+  sort: false
+---
+
+::: {#books}
+:::

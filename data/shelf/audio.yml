@@ -1,0 +1,12 @@
+# Audioshelf: podcasts and music, most recent first.
+# Fields: title, creator (host or artist), type ("podcast" or "album"), optional year, cover, url.
+# cover: path to an image in images/shelf/audio/.
+
+- title: Podcast name
+  creator: Host name
+  type: podcast
+
+- title: Album title
+  creator: Artist name
+  type: album
+  year: 2026

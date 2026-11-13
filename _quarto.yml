@@ -1,12 +1,19 @@
 project:
   type: website
+  pre-render: scripts/build-date.ts
   preview:
     port: 4200
   output-dir: _site
-  # Render only Quarto content (the old Jekyll files are ignored until deleted)
+  # Cover images are referenced from listing templates: always copy them
+  resources:
+    - images/**
+  # Pages to render (data/, templates/, scripts/ and _design/ are not pages)
   render:
     - index.md
     - cv.qmd
+    - bookshelf.qmd
+    - audioshelf.qmd
+    - films.qmd
     - projects/**
     - blog/**
 
@@ -23,6 +30,12 @@ website:
         text: Projects
       - href: blog/index.qmd
         text: Blog
+      - href: bookshelf.qmd
+        text: Bookshelf
+      - href: audioshelf.qmd
+        text: Audioshelf
+      - href: films.qmd
+        text: Films & TV
       - href: cv.qmd
         text: CV
     right:
@@ -34,7 +47,8 @@ website:
         aria-label: GitHub
   page-footer:
     left: "© 2026 Giuseppe Testa"
-    right: "Built with [Quarto](https://quarto.org)"
+    center: "Finally I did it. Thanks, Claudio."
+    right: "last build: {{< var build_date >}}"
 
 format:
   html:

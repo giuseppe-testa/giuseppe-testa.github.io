@@ -1,0 +1,29 @@
+---
+title: "Audioshelf"
+description: "Podcasts and music I keep coming back to."
+toc: false
+# Data: data/shelf/audio.yml (type: podcast | album) · layout: templates/shelf.ejs
+listing:
+  - id: podcasts
+    contents: data/shelf/audio.yml
+    template: templates/shelf.ejs
+    include:
+      type: podcast
+    sort: false
+  - id: music
+    contents: data/shelf/audio.yml
+    template: templates/shelf.ejs
+    include:
+      type: album
+    sort: false
+---
+
+## Podcasts
+
+::: {#podcasts}
+:::
+
+## Music
+
+::: {#music}
+:::

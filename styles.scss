@@ -109,3 +109,22 @@ h1, h2, h3, h4, h5, h6, .navbar-title, .listing-title, .card-title { font-weight
 .cv-row-note { margin-top: .2rem; font-size: .95rem; color: #3a3d31; }
 .cv-row-note strong { font-weight: 600; }
 .cv-row-tags .cv-tags { margin-top: .35rem; }
+
+/* footer */
+.nav-footer { border-top: 1px solid $line; font-size: .9rem; color: $muted; }
+.nav-footer-center { font-family: $headings-font-family; color: $green; }
+.nav-footer-right { font-family: $font-family-monospace; font-size: .85rem; }
+
+/* shelves (data in data/shelf/*.yml, layout in templates/shelf.ejs) */
+.shelf-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 1.6rem 1.2rem; margin: 1rem 0 2.5rem; }
+.shelf-item { display: flex; flex-direction: column; gap: .55rem; color: inherit; text-decoration: none; }
+a.shelf-item:hover .shelf-cover { border-color: $green; transform: translateY(-2px); }
+.shelf-cover { width: 100%; aspect-ratio: 2 / 3; object-fit: cover; border: 1px solid $line; background: #f8f3e6; transition: border-color .15s, transform .15s; }
+.shelf-cover-text { display: flex; flex-direction: column; justify-content: space-between; padding: .9rem .8rem; border-top: 4px solid $green; }
+.shelf-cover-title { font-family: $headings-font-family; font-size: 1.05rem; line-height: 1.2; color: $ink; }
+.shelf-cover-creator { font-family: $headings-font-family; font-size: .8rem; color: $muted; }
+.shelf-meta { display: flex; flex-direction: column; line-height: 1.3; }
+.shelf-title { font-weight: 500; }
+.shelf-creator { font-size: .88rem; color: $muted; }
+#podcasts .shelf-cover, #music .shelf-cover { aspect-ratio: 1 / 1; } /* square covers for audio */
+@media (max-width: 576px) { .shelf-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1.2rem .9rem; } }

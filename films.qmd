@@ -1,0 +1,29 @@
+---
+title: "Films & TV"
+description: "Films and series worth watching."
+toc: false
+# Data: data/shelf/screen.yml (type: film | series) · layout: templates/shelf.ejs
+listing:
+  - id: films
+    contents: data/shelf/screen.yml
+    template: templates/shelf.ejs
+    include:
+      type: film
+    sort: false
+  - id: series
+    contents: data/shelf/screen.yml
+    template: templates/shelf.ejs
+    include:
+      type: series
+    sort: false
+---
+
+## Films
+
+::: {#films}
+:::
+
+## TV series
+
+::: {#series}
+:::
