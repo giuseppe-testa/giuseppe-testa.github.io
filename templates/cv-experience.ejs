@@ -1,0 +1,31 @@
+<%
+const M = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+const fmt = d => { if (!d) return "present"; const [y, m] = String(d).split("-"); return m ? `${M[+m - 1]} ${y}` : y; };
+%>
+```{=html}
+<div class="cv-timeline">
+<% for (const item of items) { %>
+<section class="cv-company">
+<div class="cv-company-head">
+<h3 class="cv-company-name"><%= item.company %></h3>
+<% if (item.sector) { %><span class="cv-sector"><%= item.sector %></span><% } %>
+</div>
+<% for (const r of (item.roles || [])) { %>
+<div class="cv-role">
+<div class="cv-role-line">
+<span class="cv-role-title"><%= r.title %></span>
+<span class="cv-role-meta"><%= fmt(r.start) %> – <%= fmt(r.end) %><% if (r.location) { %> · <%= r.location %><% } %></span>
+</div>
+<% if (r.summary) { %><p class="cv-summary"><%= r.summary %></p><% } %>
+<% if (r.highlights && r.highlights.length) { %>
+<ul class="cv-highlights"><% for (const h of r.highlights) { %><li><%= h %></li><% } %></ul>
+<% } %>
+<% if (r.tags && r.tags.length) { %>
+<div class="cv-tags"><% for (const t of r.tags) { %><span class="cv-tag"><%= t %></span><% } %></div>
+<% } %>
+</div>
+<% } %>
+</section>
+<% } %>
+</div>
+```

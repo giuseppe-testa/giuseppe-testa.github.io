@@ -1,0 +1,7 @@
+# Skills grouped by area. Each group renders as a row of tags.
+
+- group: Methods
+  items: [Demand forecasting, Machine learning, Natural language processing, Computer vision, Algorithm development]
+
+- group: Other
+  items: [Sound engineering]

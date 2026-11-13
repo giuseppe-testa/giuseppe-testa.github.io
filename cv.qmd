@@ -1,43 +1,52 @@
 ---
 title: "Curriculum Vitae"
 toc: true
+# The content lives in data/cv/*.yml (data) and templates/cv-*.ejs (layout).
+# To update the CV, edit the YAML files only.
+listing:
+  - id: experience
+    contents: data/cv/experience.yml
+    template: templates/cv-experience.ejs
+    sort: false
+  - id: education
+    contents: data/cv/education.yml
+    template: templates/cv-education.ejs
+    sort: false
+  - id: skills
+    contents: data/cv/skills.yml
+    template: templates/cv-skills.ejs
+    sort: false
+  - id: languages
+    contents: data/cv/languages.yml
+    template: templates/cv-languages.ejs
+    sort: false
+  - id: certifications
+    contents: data/cv/certifications.yml
+    template: templates/cv-certifications.ejs
+    sort: false
 ---
 
 ## Experience
 
-### TeamSystem
-**Senior Data Scientist** · Nov 2023 – present · Campobasso, Italy
-
-### Ferragamo
-**Data Scientist** · Jan 2023 – Oct 2023 · Florence, Italy
-
-### Saipem
-**Data Scientist** · Jan 2021 – Dec 2022 · Venice, Italy  
-**Data Scientist** · Mar 2019 – Dec 2020 · Milan, Italy  
-**Machine Learning Intern** · Mar 2018 – Feb 2019 · Milan, Italy
-
-### Skuola Network
-**Mathematics and Statistics Tutor** · Sep 2014 – Jun 2018 · Milan, Italy
+::: {#experience}
+:::
 
 ## Education
 
-- **MSc, Computer Science and Engineering**, Politecnico di Milano
-- **BSc, Mathematical Engineering**, Politecnico di Milano
-- **Exchange semester**, Pontificia Universidad Católica de Valparaíso
+::: {#education}
+:::
 
 ## Skills
 
-Demand forecasting · Machine learning · Natural language processing ·
-Computer vision · Algorithm development · Sound engineering
+::: {#skills}
+:::
 
 ## Languages
 
-Italian (native) · English (professional) · Spanish (elementary)
+::: {#languages}
+:::
 
 ## Certifications
 
-- Sequences, Time Series and Prediction
-- Natural Language Processing in TensorFlow
-- Structuring Machine Learning Projects
-- Computer Vision Nanodegree
-- BOSIET
+::: {#certifications}
+:::

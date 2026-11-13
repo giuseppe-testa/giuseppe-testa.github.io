@@ -80,3 +80,25 @@ div.sourceCode, pre.sourceCode { background-color: $cream-dark !important; borde
 /* Share Tech Mono has a single weight: never fake bold */
 h1, h2, h3, h4, h5, h6, .navbar-title, .listing-title, .card-title { font-weight: 400 !important; font-synthesis: none; }
 @media (max-width: 576px) { .home-section { padding: 0; } }
+
+/* CV (data in data/cv/*.yml, layout in templates/cv-*.ejs) */
+.cv-timeline { margin-top: 1.2rem; }
+.cv-company { position: relative; padding: 0 0 1.6rem 1.4rem; border-left: 1px solid $line; }
+.cv-company::before { content: ""; position: absolute; left: -5px; top: .55rem; width: 9px; height: 9px; background: $green; }
+.cv-company:last-child { padding-bottom: .2rem; }
+.cv-company-head { display: flex; align-items: baseline; gap: .6rem; flex-wrap: wrap; }
+.cv-company-head .anchorjs-link { display: none; }
+.cv-company-name { margin: 0 !important; font-size: 1.35rem; color: $ink; border: 0 !important; }
+.cv-sector, .cv-row-label { font-family: $headings-font-family; font-size: .85rem; color: $muted; }
+.cv-role { margin-top: .55rem; }
+.cv-role-line { display: flex; justify-content: space-between; gap: 1rem; flex-wrap: wrap; }
+.cv-role-title { font-weight: 600; }
+.cv-role-meta, .cv-row-meta { color: $muted; font-size: .95rem; }
+.cv-summary { margin: .3rem 0 0; color: #3a3d31; }
+.cv-highlights { margin: .4rem 0 0; padding-left: 1.1rem; color: #3a3d31; }
+.cv-tags { display: flex; flex-wrap: wrap; gap: .4rem; margin-top: .45rem; }
+.cv-tag { font-family: $headings-font-family; font-size: .85rem; color: $green; border: 1px solid $line; background: #f8f3e6; padding: .1rem .5rem; }
+.cv-row { display: flex; justify-content: space-between; gap: 1rem; flex-wrap: wrap; padding: .6rem 0; border-bottom: 1px solid $line; }
+.cv-row-main { font-weight: 500; }
+.cv-row-tags { display: block; }
+.cv-row-tags .cv-tags { margin-top: .35rem; }

@@ -1,0 +1,43 @@
+# Work experience, most recent first.
+# Each company groups one or more roles. Dates: "YYYY-MM"; end: null = present.
+# Optional per role: summary (one sentence), highlights (list of results), tags.
+
+- company: TeamSystem
+  sector: Software
+  roles:
+    - title: Senior Data Scientist
+      start: "2023-11"
+      end: null
+      location: Campobasso, Italy
+
+- company: Ferragamo
+  sector: Luxury retail
+  roles:
+    - title: Data Scientist
+      start: "2023-01"
+      end: "2023-10"
+      location: Florence, Italy
+
+- company: Saipem
+  sector: Energy
+  roles:
+    - title: Data Scientist
+      start: "2021-01"
+      end: "2022-12"
+      location: Venice, Italy
+    - title: Data Scientist
+      start: "2019-03"
+      end: "2020-12"
+      location: Milan, Italy
+    - title: Machine Learning Intern
+      start: "2018-03"
+      end: "2019-02"
+      location: Milan, Italy
+
+- company: Skuola Network
+  sector: Education
+  roles:
+    - title: Mathematics and Statistics Tutor
+      start: "2014-09"
+      end: "2018-06"
+      location: Milan, Italy

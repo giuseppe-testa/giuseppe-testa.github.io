@@ -1,0 +1,10 @@
+```{=html}
+<div class="cv-list">
+<% for (const item of items) { %>
+<div class="cv-row cv-row-tags">
+<span class="cv-row-label"><%= item.group %></span>
+<div class="cv-tags"><% for (const s of (item.items || [])) { %><span class="cv-tag"><%= s %></span><% } %></div>
+</div>
+<% } %>
+</div>
+```
