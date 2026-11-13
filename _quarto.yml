@@ -1,5 +1,7 @@
 project:
   type: website
+  preview:
+    port: 4200
   output-dir: _site
   # Render only Quarto content (the old Jekyll files are ignored until deleted)
   render:
